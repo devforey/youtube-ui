@@ -1,11 +1,19 @@
 {
   "name": "youtube-ui-lib",
-  "version": "1.0.0",
+  "version": "1.0.0-beta1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "gulp sass",
+    "dev": "gulp sass:watch",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
 }
