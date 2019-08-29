@@ -1,3 +1,112 @@
 @import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
 * {
   font-family: 'Open Sans', sans-serif; }
+
+/* Modules */
+.header-1 {
+  font-weight: bold;
+  font-size: 48px; }
+
+.header-3 {
+  font-weight: bold;
+  font-size: 36px; }
+
+.header-3 {
+  font-weight: bold;
+  font-size: 32px; }
+
+.header-4 {
+  font-weight: bold;
+  font-size: 28px; }
+
+.btn {
+  padding: 14px 24px;
+  background: lightgray;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  outline: 0;
+  border: 1px solid lightgray;
+  white-space: nowrap;
+  /* Variations */ }
+  .btn--primary {
+    background: #FA251C;
+    border-color: #FA251C;
+    color: white; }
+  .btn--link {
+    background: none;
+    border: 0;
+    text-decoration: none;
+    opacity: 0.6;
+    display: inline-block;
+    font-weight: normal; }
+  .btn--link.is-btn-active {
+    color: #FA251C; }
+  .btn--link:hover {
+    opacity: 1; }
+
+.nav {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-y: hidden;
+  height: 46px;
+  /* Sub objects */
+  /* Varitions */ }
+  .nav__group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; }
+  .nav__group:not(:first-child) {
+    border-left: 1px solid lightgray; }
+  .nav__group-title {
+    align-self: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 48px;
+    padding-right: 24px; }
+  .nav__group-item {
+    display: block; }
+  .nav--vertical {
+    display: inline-block;
+    flex-direction: column;
+    height: unset;
+    align-items: start;
+    padding: 14px 0; }
+  .nav--vertical .nav__group {
+    flex-direction: column;
+    border: 0; }
+  .nav--vertical .nav__group-title {
+    border: 0;
+    padding: 48px 24px 12px 24px;
+    align-self: start; }
+
+.card {
+  background: white;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden; }
+  .card__image {
+    width: 100%;
+    height: 250px; }
+    .card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .card__body {
+    margin: 24px; }
+  .card__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px; }
+  .card__subtitle {
+    font-size: 16px;
+    margin-top: -16px;
+    margin-bottom: 24px;
+    opacity: 0.6; }
+  .card__buttons {
+    margin: 24px 0; }

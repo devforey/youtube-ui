@@ -1,0 +1,42 @@
+.btn {
+    padding: 14px 24px;
+    background: lightgray;
+    border-radius: 5px;
+
+    font-weight: bold;
+    color: black;
+
+    // Remove outline on focus
+    outline: 0;
+
+    // Remove on click border
+    border: 1px solid lightgray;
+
+    // Dont wrap text inside button || No new lines
+    white-space: nowrap;
+
+    /* Variations */
+    &--primary {
+        background: #FA251C;
+        border-color: #FA251C;
+        color: white;
+    }
+
+    &--link {
+        background: none;
+        border: 0;
+        text-decoration: none;
+        opacity: 0.6;
+        display: inline-block;
+        font-weight: normal;
+    }
+
+    &--link.is-btn-active {
+        color: #FA251C;
+    }
+
+    &--link:hover {
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,17 @@
+.l-page {
+    padding: 20px;
+    background: #f3f3f3;
+}
+
+.l-section {
+    margin: 48px 0;
+}
+
+.l-section__title {
+    margin-bottom: 14px;
+}
+
+.l-section__divider {
+    height: 1px;
+    background: lightgray;
+}

@@ -3,3 +3,9 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Modules */
+@import './modules/typography';
+@import './modules/button';
+@import './modules/nav';
+@import './modules/card';
