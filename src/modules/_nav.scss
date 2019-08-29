@@ -5,10 +5,8 @@
     align-items: center;
 
     // Allow scrolling horizontally
-    overflow-y: hidden;
+    overflow-x: auto;
 
-    height: 46px;
- 
     /* Sub objects */
     &__group {
         // Reset list style
@@ -45,6 +43,9 @@
         align-items: start;
 
         padding: 14px 0;
+
+        // Allow scrolling vertically
+        overflow-y: auto;
     }
 
     &--vertical &__group {

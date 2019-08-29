@@ -6,6 +6,12 @@
     font-weight: bold;
     color: black;
 
+    cursor: pointer;
+
+    box-shadow: 0;
+
+    transition: box-shadow 150ms ease;
+
     // Remove outline on focus
     outline: 0;
 
@@ -15,11 +21,19 @@
     // Dont wrap text inside button || No new lines
     white-space: nowrap;
 
+    &:hover {
+        box-shadow: 0 1pt 4pt lightgray;
+    }
+
     /* Variations */
     &--primary {
         background: #FA251C;
         border-color: #FA251C;
         color: white;
+
+        &:hover {
+            box-shadow: 0 1pt 4pt #FA251C;
+        }
     }
 
     &--link {
@@ -29,14 +43,19 @@
         opacity: 0.6;
         display: inline-block;
         font-weight: normal;
-    }
 
-    &--link.is-btn-active {
-        color: #FA251C;
-    }
+        &.is-btn-active {
+            color: #FA251C;
+        }
 
-    &--link:hover {
-        opacity: 1;
-    }
+        &.is-btn-disabled, &[disabled] {
+            opacity: 0.2;
+            pointer-events: none;
+        }
 
+        &:hover:not([disabled]):not(.is-btn-disabled) {
+            opacity: 1;
+            box-shadow: none;
+        }
+    }
 }
