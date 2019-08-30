@@ -31,6 +31,7 @@
   outline: 0;
   border: 1px solid lightgray;
   white-space: nowrap;
+  display: inline-block;
   /* Variations */ }
   .btn:hover {
     box-shadow: 0 1pt 4pt lightgray; }
@@ -45,7 +46,6 @@
     border: 0;
     text-decoration: none;
     opacity: 0.6;
-    display: inline-block;
     font-weight: normal; }
     .btn--link.is-btn-active {
       color: #FA251C; }
@@ -84,7 +84,6 @@
     margin: 24px 0; }
 
 .nav {
-  background: white;
   display: flex;
   flex-direction: row;
   align-items: center;

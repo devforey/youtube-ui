@@ -21,6 +21,9 @@
     // Dont wrap text inside button || No new lines
     white-space: nowrap;
 
+    // All buttons should be inline by default
+    display: inline-block;
+
     &:hover {
         box-shadow: 0 1pt 4pt lightgray;
     }
@@ -41,7 +44,6 @@
         border: 0;
         text-decoration: none;
         opacity: 0.6;
-        display: inline-block;
         font-weight: normal;
 
         &.is-btn-active {
