@@ -133,3 +133,49 @@
     border: 0;
     padding: 48px 24px 12px 24px;
     align-self: start; }
+
+.people-widget {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  /* Sub objects */
+  /* Variants */ }
+  .people-widget__image {
+    border-radius: 50px;
+    width: 48px;
+    height: 48px; }
+  .people-widget__image-outline {
+    border: 2px solid lightgray;
+    border-radius: 50px;
+    padding: 2px;
+    display: flex;
+    width: 48px; }
+  .people-widget__image-outline.is-outline-active {
+    border-color: indianred; }
+  .people-widget__image-notification {
+    position: relative; }
+    .people-widget__image-notification:after {
+      content: ' ';
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      background: indianred;
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .people-widget__title {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 8px; }
+  .people-widget__subtitle {
+    font-weight: normal;
+    font-size: 11px;
+    margin-top: 4px;
+    color: darkgray; }
+  .people-widget--horizontal {
+    flex-direction: row; }
+    .people-widget--horizontal .people-widget__title {
+      margin-top: 0;
+      margin-left: 12px; }
+    .people-widget--horizontal .people-widget__subtitle {
+      margin-left: 12px; }
