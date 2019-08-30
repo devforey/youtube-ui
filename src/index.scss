@@ -1,13 +1,15 @@
-@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+/* Base */
+@import './css/base/normalize';
 
 * {
     font-family: 'Open Sans', sans-serif;
 }
 
 /* Modules */
-@import './modules/typography';
-@import './modules/button';
-@import './modules/input';
-@import './modules/card';
-@import './modules/nav';
-@import './modules/people-widget';
+@import './css/modules/typography';
+@import './css/modules/button';
+@import './css/modules/input';
+@import './css/modules/card';
+@import './css/modules/nav';
+@import './css/modules/people-widget';
+@import './css/modules/slides';

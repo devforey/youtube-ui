@@ -1,0 +1,27 @@
+.slides {
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    &__items {
+        position: relative;
+
+        min-width: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__item {
+        flex: 0 0 100%;
+        opacity: 0;
+        transition: opacity 500ms ease;
+    }
+
+    &__item.is-slide-visible {
+        opacity: 1;
+    }
+}
